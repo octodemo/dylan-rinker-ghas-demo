@@ -10,6 +10,6 @@ jobs:
     - name: Generate dependencies action
       uses: thedave42/generate-dependencies-csv-action@v6
       with:
-        repo-token: ${{ secrets.YOUR_TOKEN }}
+        repo-token: ${{ secrets.GH_TOKEN }}
         org-name: octodemo
-        repo-names: dylan-rinker-ghas-demo
+        repo-names: dylan-rinker-ghas-jira
