@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test_job:
+  gather_dependencies:
     runs-on: ubuntu-latest
     steps:
     - name: Generate dependencies action
