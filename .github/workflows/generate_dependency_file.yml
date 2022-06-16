@@ -3,9 +3,13 @@ name: "Generate Dependency Info"
 on:
   workflow_dispatch:
 
-- name: Generate dependencies action
-  uses: thedave42/generate-dependencies-csv-action@v6
-  with:
-    repo-token: ${{ secrets.YOUR_TOKEN }}
-    org-name: octodemo
-    repo-names: dylan-rinker-ghas-demo
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Generate dependencies action
+      uses: thedave42/generate-dependencies-csv-action@v6
+      with:
+        repo-token: ${{ secrets.YOUR_TOKEN }}
+        org-name: octodemo
+        repo-names: dylan-rinker-ghas-demo
